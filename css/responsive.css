@@ -9,7 +9,7 @@
 
 	/*---- Home6 Css Start ----*/
 	.home6-ourServicesSliderMain{ padding: 40px 40px 0px; }
-	.home6-ourServicesBoxLabel{ padding: 18px; font-size: 18px; margin: 15px; width: calc(100% - 30px); }
+	.home6-ourServicesBoxLabel{ padding: 18px; font-size: 14px; margin: 15px; width: calc(100% - 30px); }
 	/*---- Home6 Css End ----*/
 
 	/*---- Home7 Css Start ----*/
@@ -1375,7 +1375,7 @@
 
 	.home6-digitalMarketing { top: -20px; }
 	.home6-digitalMarketing:before { content: unset; position: unset; }
-	.home6-digitalMarketingBox.redBox{ background-color: #d90627; }
+	.home6-digitalMarketingBox.redBox{ background-color: #6CB350 }
 
 	.font18-content{ font-size: 16px !important; }
 

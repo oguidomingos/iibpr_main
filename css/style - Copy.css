@@ -1188,11 +1188,11 @@ p:last-child { padding-bottom: 0px; }
 .categoryNav .items ul li:before{ position: absolute; left: 0px; top: 6px; font-family:"Font Awesome 5 Free"; content:"\f111"; color: #000; font-size: 8px; }
 
 /*-- Common Colour --*/
-.red {color: #d90627 !important;}
+.red {color: #A6D16C !important;}
 .green {color: #00c57c !important;}
 .darkgray {color: #404856 !important;}
 .gray {color: #f3f3f3 !important;}
-.redbg {background-color: #d90627 !important;}
+.redbg {background-color: #6CB350 !important;}
 .greenbg {background-color: #00c57c !important;}
 .darkgraybg {background-color: #404856 !important;}
 .graybg {background-color: #f3f3f3 !important;}
