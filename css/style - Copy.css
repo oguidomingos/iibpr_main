@@ -6213,10 +6213,10 @@ ul.inline-social-media-icons li .fab {
 .home6-footer-navlink{ color: #ffffff; font-family: 'Avenir LT Std 65'; font-weight: 500; position: relative; display: block; line-height: normal; padding: 0px 0px 0px 30px; }
 .home6-footer-navlink:before{ content: ""; position: absolute; left: 0px; top: 10px; width: 15px; height: 2px; background-color: #797979; transition: all 250ms; }
 .home6-footer-navlink:hover:before{ width: 22px; background-color: #ffffff; }
-.home6-footer-contact{ border-bottom: solid 1px #656565; padding-bottom: 18px; margin-bottom: 18px; font-family: 'Avenir LT Std 65'; font-weight: 500 !important; color: #ffffff; }
+.home6-footer-contact{ border-bottom: solid 0px #656565; padding-bottom: 18px; margin-bottom: 18px; font-family: 'Avenir LT Std 65'; font-weight: 500 !important; color: #ffffff; }
 .home6-footer-contact:last-child{ border-bottom: 0px; margin-bottom: 0px; }
 .home6-footer-contact-icon{ width: 35px; color: #d40323; display: inline-block; }
-.home6-copyright{ border-top: solid 1px #535353; padding: 30px 0px; margin-top: 40px; }
+.home6-copyright{ border-top: solid 0px #535353; padding: 30px 0px; margin-top: 40px; }
 .home6-copyright-link-main{ text-align: right; }
 .home6-copyright-link{ width: 40px; height: 40px; background-color: #5e5d5d; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 16px; color: #ffffff; margin-left: 10px; }
 .home6-copyright-link:hover, .home6-copyright-link:focus{ background-color: #d40323; color: #ffffff; }
