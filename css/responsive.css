@@ -667,7 +667,7 @@
 	.menuMain .nav-link:hover, .menuMain .nav-link:focus { color: #ffffff; background-color: #000000; }
 	.navbar-collapse { position: fixed !important; top: 0; /*left: 0;*/ height: 100vh !important; height: 100%; overflow: hidden !important; /*overflow-y: hidden;*/ overflow-y: auto !important; background: #1a262f; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); min-width: 230px; transition: all 0.1s !important; left: -230px; opacity: 0; display: table !important; z-index: 99999; }
 	.navbar-collapse.show { left: 0px; transition: all 0.1s !important; opacity: 1; }
-	.navbar-toggler { padding: 12px; background-color: #000; border-radius: 0px; }
+	.navbar-toggler { padding: 12px; background-color: #6CB350; border-radius: 0px; }
 	.navbar-toggler-icon { background-image: url("../images/menu.png"); background-size: cover; width: 24px; height: 24px; }
 	.navbar-toggler>.close { background-image: url("../images/close.png"); background-size: cover; display: inline-block; width: 24px; height: 24px; vertical-align: middle; content: ""; opacity: 1; fill: #fff; color: #fff; float: none; }
 	.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon { display: none; }
@@ -943,7 +943,7 @@
 	/*---- Home6 Css Start ----*/
 	.home6slider{ height: unset; }
 	.home6slider .carousel-inner{ height: unset; }
-	.home6slider .carousel-inner .carousel-item{ height: unset; }
+	.home6slider .carousel-inner .carousel-item{  }
 	.home6slider .carousel-caption h1 { font-size: 34px; }
 	.home6slider .carousel-caption h1 small { font-size: 18px; padding-top: 10px; padding-bottom: 15px; }
 	.home6slider ol.carousel-indicators{ bottom: 25px; }
@@ -1035,6 +1035,13 @@
 
 @media only screen and (max-width : 767px) {
 	body { font-size: 14px; padding-top: 58px; }
+	.innerBannerImage {
+        height: 30vh;
+    }
+
+	.innerBannerImage img {
+		height: 100%;
+	}
 	.indx-whatwedoBox { padding: 10px !important; }
 	.indx-whatwedoBox h2 small { font-size: 34px; }
 	.indx-whatwedoBox h3 { font-size: 22px; padding: 0px 0px 12px; margin: 0px 0px 18px; }
@@ -1091,7 +1098,7 @@
 	.tabs-part .nav-item { width: auto; }
 	.tabs-part .nav-link { padding: 10px; }
 	.ourClientsData h4:before { font-size: 30px; right: -10px; top: -4px; }
-	.headerMain { background-color: #000000; }
+	.headerMain { background-color: #f5f5f5 !important; height: 7vh; }
 	.headerMain .navbar-brand img { max-width: 60px; }
 	.headerMain.affix .navbar-brand img { max-width: 60px; }
 	.navbar-toggler { padding: 8px; }
@@ -1359,7 +1366,7 @@
 
 
 	/*---- Home6 Css Start ----*/
-	.home6slider .carousel-inner { height: 300px; }
+	.home6slider .carousel-inner { height: 90vh; }
 	.home6sliderImage { min-height: 300px; object-fit: cover; object-position: right; }
 	.home6slider .carousel-control-next, .home6slider .carousel-control-prev { padding: 0px; display: none; }
 	.home6slider .carousel-caption{ right: 15px; left: 15px; }
