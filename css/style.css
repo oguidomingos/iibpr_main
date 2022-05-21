@@ -798,7 +798,8 @@ p:last-child { padding-bottom: 0px; }
 
 
 /*---- About Us Page ----*/
-.welcomeTechnetiumPart{ padding: 90px 0px; background-image: url(../images/3.png); background-repeat: no-repeat; background-position: center -140px; }
+.welcomeTechnetiumPart{ padding: 90px 0px; background-position: center -140px; }
+.home6-iibprBg2{ padding: 90px 0px; background-image: url(../images/3.png); background-repeat: no-repeat; background-position: center -140px; }
 
 /*Slider Main*/
 .welcomeTechnetiumSlider { /*justify-content: space-around; overflow: hidden;*/ display: flex; position: relative; margin-bottom: 98px; }
@@ -6463,8 +6464,14 @@ ul.inline-social-media-icons li .fab {
   z-index:100;
 }
 
+.logo-evento {
+    margin-top: 6rem; margin-bottom: 2rem;
+}
 
-
+.mod-services-img {
+    width: 70%;
+    float: right;
+}
 /*
 font-family: 'Merriweather Sans', sans-serif;
 Light 300

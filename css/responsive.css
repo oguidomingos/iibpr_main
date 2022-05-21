@@ -673,6 +673,7 @@
 	.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon { display: none; }
 	.menuMain .nav-link { margin: 0px; }
 	.menuMain .nav-link:hover:before, .menuMain .nav-link.active:before { right: auto; }
+	
 	/*.menuMain .nav-link:hover:before, .menuMain .nav-link.active:before{ position: unset; right: unset; bottom: unset; width: unset; height: unset; border-radius: 0px; content: none; background-color: unset; }*/
 
     /*--Mobile Menu End--*/
@@ -1042,6 +1043,7 @@
 	.innerBannerImage img {
 		height: 100%;
 	}
+	.slogan { max-width: 175px;}
 	.indx-whatwedoBox { padding: 10px !important; }
 	.indx-whatwedoBox h2 small { font-size: 34px; }
 	.indx-whatwedoBox h3 { font-size: 22px; padding: 0px 0px 12px; margin: 0px 0px 18px; }
