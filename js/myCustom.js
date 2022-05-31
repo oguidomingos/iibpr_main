@@ -92,7 +92,7 @@ $(document).ready(function() {
         slidesPerView: 1,
         loop: true,
         speed:600,
-        autoplay: 4000,
+        autoplay: 14000,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
     });
@@ -329,7 +329,7 @@ if($("#home6-testimonialsCarousel").length){
   $("#home6-testimonialsCarousel").owlCarousel({
        loop: true,
        autoplay: true,
-       autoplayTimeout: 8000,
+       autoplayTimeout: 12000,
        margin: 10,
        nav: false,
        responsiveClass: true,
