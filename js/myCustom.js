@@ -92,7 +92,7 @@ $(document).ready(function() {
         slidesPerView: 1,
         loop: true,
         speed:600,
-        autoplay: 14000,
+        autoplay: 15000,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
     });

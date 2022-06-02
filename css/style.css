@@ -6190,7 +6190,7 @@ ul.inline-social-media-icons li .fab {
 .home6-comonTitleOne small:before{ position: absolute; left: 0px; right: 0px; top: 0px; content: ""; width: 40px; height: 3px; background-color: #6CB350; }
 
 .home6-comonTitleOne.center{ text-align: center; }
-.home6-comonTitleOne.center small:before { margin: 0px auto; }
+.home6-comonTitleOne.center small:before { margin: 0px auto;  }
 
 .home6-about-company{ padding: 110px 0px 190px; }
 
@@ -6210,7 +6210,7 @@ ul.inline-social-media-icons li .fab {
 .home6-fourPointBoxTitle{ font-size: 18px; padding-bottom: 15px; position: relative; padding-left: 21px; color: #111111; transition: all 300ms; }
 .home6-fourPointBoxTitle:before { content: ""; position: absolute; left: 0px; top: 7px; width: 13px; height: 13px; border-top: solid 3px #6CB350; border-bottom: solid 3px #6CB350; transition: all 300ms; }
 .home6-fourPointBoxMore{ font-size: 14px; width: 33px; height: 33px; border-radius: 50%; background-color: #f3f3f4; color: #666666; display: flex; align-items: center; justify-content: center; transition: all 300ms; }
-.home6-fourPointBox:hover { box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
+.home6-fourPointBox:hover { box-shadow: 0px 0px 20px rgba(108, 179, 80, 0.5); }
 .home6-fourPointBox:hover .home6-fourPointBoxMore{ background-color: #6CB350; color: #ffffff; }
 .home6-fourPointBox:hover .home6-fourPointBoxTitle{ color: #6CB350; }
 .home6-fourPointBox:hover .home6-fourPointBoxTitle:before { -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); -o-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); border-color: #111111; }
@@ -6469,8 +6469,32 @@ ul.inline-social-media-icons li .fab {
 }
 
 .mod-services-img {
-    width: 70%;
+    width: 95%;
     float: right;
+}
+
+.hover-btn-expand {
+    
+    color: #6CB350;
+    font-size: 1.5rem;
+}
+
+.hover-btn-expand:hover {
+    color: #A6D16C;
+    
+    transition: all 0,3s;
+}
+
+.btn-lite {
+    color: #6CB350;
+    text-align: left;
+    font-size: 18px;
+    
+}
+
+
+.videoContainer {
+    
 }
 /*
 font-family: 'Merriweather Sans', sans-serif;
