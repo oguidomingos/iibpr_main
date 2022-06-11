@@ -8,8 +8,8 @@
 	/*---- Home5 Css End ----*/
 
 	/*---- Home6 Css Start ----*/
-	.home6-ourServicesSliderMain{ padding: 40px 40px 0px; }
-	.home6-ourServicesBoxLabel{ padding: 18px; font-size: 14px; margin: 15px; width: calc(100% - 30px); }
+	.home6-ourServicesSliderMain{ padding: 40px 240px 0px; }
+	.home6-ourServicesBoxLabel{ padding: 18px; font-size: 14px; width: 100%; margin: 0 auto; display: block;  }
 	/*---- Home6 Css End ----*/
 
 	/*---- Home7 Css Start ----*/
