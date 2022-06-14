@@ -6498,6 +6498,16 @@ ul.inline-social-media-icons li .fab {
 .videoContainer {
     
 }
+
+.owl-nav {
+    background: white;
+    color: inherit;
+    border: none;
+    padding: 10px !important;
+    font-size: 15px;
+    margin-top: 3rem;
+    width: max-content;
+}
 /*
 font-family: 'Merriweather Sans', sans-serif;
 Light 300

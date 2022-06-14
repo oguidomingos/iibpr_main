@@ -268,10 +268,13 @@ $(document).ready(function () {
     $('#home6-ourServicesCarousel').owlCarousel({
       loop: true,
       autoplay: false,
-      nav: true,
       dots: true,
       margin: 10,
-      nav: false,
+      nav: true,
+      navText: [
+        "<i class='fa fa-chevron-left'></i>",
+        "<i class='fa fa-chevron-right'></i>"
+      ],
       responsiveClass: true,
       responsive: {
         0: {
@@ -346,7 +349,11 @@ $(document).ready(function () {
       autoplay: true,
       autoplayTimeout: 12000,
       margin: 10,
-      nav: false,
+      nav: true,
+      navText: [
+        "<i class='fa fa-chevron-left'></i>",
+        "<i class='fa fa-chevron-right'></i>"
+      ],
       responsiveClass: true,
       responsive: {
         0: {
