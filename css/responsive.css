@@ -1,7 +1,7 @@
 
 /*---Responsive---*/
 @media (min-width: 1799px) {
-	.home6-ourServicesBox{ height: 45rem;}
+	.home6-ourServicesBox{ height: 35rem; width: 25rem;}
 }
 
 @media (max-width: 1799px) {
@@ -1042,8 +1042,10 @@
 @media only screen and (max-width : 767px) {
 	body { font-size: 14px; padding-top: 58px; }
 	.innerBannerImage {
-        height: 30vh;
+        height: 100%;
     }
+
+	.title-part {text-align: start;}
 
 	.innerBannerImage img {
 		height: 100%;
