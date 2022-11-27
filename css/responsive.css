@@ -1,7 +1,7 @@
 
 /*---Responsive---*/
 @media (min-width: 1799px) {
-	.home6-ourServicesBox{ height: 35rem; width: 25rem;}
+	.home6-ourServicesBox{ height: 29rem; width: 25rem;}
 }
 
 @media (max-width: 1799px) {
@@ -13,7 +13,7 @@
 	/*---- Home6 Css Start ----*/
 	.home6-ourServicesSliderMain{ padding: 40px 240px 0px; }
 	.home6-ourServicesBoxLabel{ padding: 18px; font-size: 14px; width: 100%; margin: 0 auto; display: block;  }
-	.home6-ourServicesBox{ height: 38rem;}
+	.home6-ourServicesBox{ height: 29rem;}
 	/*---- Home6 Css End ----*/
 
 	/*---- Home7 Css Start ----*/
@@ -88,7 +88,7 @@
 	/*---- Home5 Css Start ----*/
 	.home5-light-background:before { background-position: -100px bottom; }
 	/*---- Home5 Css End ----*/
-	.home6-ourServicesBox{ height: 32rem;}
+	.home6-ourServicesBox{ height: 29rem;}
 
 }
 
