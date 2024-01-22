@@ -304,6 +304,46 @@ $(document).ready(function () {
       }
     })
   }
+  if ($('#homeiibpr-ourServicesCarousel').length) {
+    $('#homeiibpr-ourServicesCarousel').owlCarousel({
+      loop: true,
+      autoplay: false,
+      dots: true,
+      margin: 10,
+      nav: true,
+      navText: [
+        "<i class='fa fa-chevron-left'></i>",
+        "<i class='fa fa-chevron-right'></i>"
+      ],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        850: {
+          items: 2
+        },
+        992: {
+          items: 3
+        },
+        1199: {
+          items: 3,
+          margin: 20
+        },
+        1399: {
+          items: 3,
+          margin: 30
+        },
+        1600: {
+          items: 3,
+          margin: 30
+        }
+      }
+    })
+  }
 
   if ($('#home7-brandLogoCarousel').length) {
     $('#home7-brandLogoCarousel').owlCarousel({
