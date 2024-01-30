@@ -71,7 +71,8 @@
 
 .no-js .owl-carousel,
 .owl-carousel.owl-loaded {
-    display: block
+    display: block;
+    padding-top: 7rem
 }
 
 .owl-carousel .owl-dot,

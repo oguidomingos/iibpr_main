@@ -6217,7 +6217,7 @@ ul.inline-social-media-icons li .fab {
 .home6-fourPointBox:hover .home6-fourPointBoxTitle{ color: #6CB350; }
 .home6-fourPointBox:hover .home6-fourPointBoxTitle:before { -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); -o-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); border-color: #111111; }
 
-.home6-ourServices{ padding: 0px 0px 100px 0px; }
+.home6-ourServices{ padding: 6rem 0px 100px 0px; }
 .home6-ourServicesSliderMain{ padding: 40px 80px 0px; }
 .home6-ourServicesBox{ background-color: transparent; height: 29rem; position: relative; border-radius: 70px; }
 .home6-ourServicesBox-image{ width: 100%; height: auto; object-fit: cover; margin: 0 auto;  }
@@ -6505,12 +6505,25 @@ ul.inline-social-media-icons li .fab {
     border: none;
     padding: 10px !important;
     font-size: 15px;
-    margin-top: 3rem;
     width: max-content;
+    position: absolute;
+    top: 0px;
 }
 
 .badge-padding {
     padding: 5px;
+}
+
+.mblsize {
+    max-height: 75%;
+}
+
+.custom-owl-nav {
+    position: absolute;
+    top: 20px; /* Ajuste a altura desejada em relação ao topo do carrossel */
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 /*
 font-family: 'Merriweather Sans', sans-serif;

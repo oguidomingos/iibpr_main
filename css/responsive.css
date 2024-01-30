@@ -1234,6 +1234,9 @@
 	.home7-footer-title { font-size: 18px; padding-bottom: 10px; }
 	.home7-footer-contain br{ display: none; }
 	.home7-copyright { padding: 40px 0px 30px; }
+	.mblsize {
+		max-height: 50%;
+	}
 
 	/*---- Home7 Css End ----*/
 
@@ -1376,7 +1379,7 @@
 
 	/*---- Home6 Css Start ----*/
 	.home6slider .carousel-inner { height: 90vh; }
-	.home6sliderImage { min-height: 300px; object-fit: cover; object-position: right; }
+	.home6sliderImage { min-height: 300px; object-fit: cover; object-position: center; }
 	.home6slider .carousel-control-next, .home6slider .carousel-control-prev { padding: 0px; display: none; }
 	.home6slider .carousel-caption{ right: 15px; left: 15px; }
 	.home6slider .carousel-caption h1 { font-size: 24px; padding-bottom: 12px; }
