@@ -1,35 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Grafomotricidade - Instituto IBPR</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            verde: "#5FB33E",
-            verdeclaro: "#CFE9C6",
-            cinzaescuro: '#212121'
-          }
-        }
-      }
-    }
-  </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKV0HNPENN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-JKV0HNPENN');
-  </script>
+  <!-- <link href="./assets/css/output.css" rel="stylesheet"> -->
+  <link href="./assets/css/minified.css" rel="stylesheet">
+  <link rel="icon" href="./assets/imgs/favicon.ico" sizes="43x43">
+  <meta name="description"
+    content="Curso de Grafomotricidade organizado pelo Instituto Ítalo-Brasileiro de Psicologia da Relaçãoe ministrado pelos especialistas Augusto Parras, Fabiane Crispim e Ana Rita Matias.">
 </head>
 
 <body>
@@ -91,18 +71,18 @@
   <div id="ocurso" class="w-full sm:w-8/12 mx-auto px-4 sm:px-0 py-28">
     <!-- TITLE AND SUBTITLE -->
     <section class="flex flex-col text-center p-4">
-      <img class="h-40 w-auto" src="./assets/imgs/logo.svg" alt="IIBPR">
+      <img class="h-20 md:h-40 w-auto" src="./assets/imgs/logo.svg" width="260" height="170" alt="Logomarca do Instituto IBPR">
       <p class="font-bold text-xl text-verde">Onde há movimento, há vida em relação!</p>
     </section>
     <section class="grid grid-cols-1 md:grid-cols-2 p-4 sm:p-16">
       <div class="p-8 sm:pe-20 sm:border-r border-verde">
-        <h1 class="mb-12 text-3xl font-extrabold leading-none tracking-tight text-verde md:text-5xl">
+        <h1 class="mb-12 text-2xl md:text-3xl font-extrabold leading-none tracking-tight text-verde md:text-5xl">
           Desbloqueie
           o Potencial de
           Aprendizado com
           Grafomotricidade
         </h1>
-        <p class="mb-6 text-lg font-normal text-cinzaescuro lg:text-xl ">
+        <p class="mb-6 text-lg text-sm md:font-normal text-cinzaescuro lg:text-xl">
           Bem-vindo à porta de entrada para uma revolução na alfabetização. Mergulhe nos fundamentos da grafomotricidade
           e veja como esta competência essencial pode mudar a trajetória educacional dos seus alunos. A nossa aula
           introdutória oferece uma amostra valiosa do curso completo, entregando técnicas e insights que você pode
@@ -162,17 +142,17 @@
     </section>
     <!-- VIDEO -->
     <section class="w-full md:px-[20%] text-center py-4">
-      <!-- <img class="rounded-lg max-w-full block mx-auto" src="./assets/imgs/potencial.png" alt="IIBPR">
-       -->
-      <iframe class="object-cover w-full rounded-lg" width="100%" height="390" src="https://www.youtube.com/embed/RnmL9y4kXeQ?si=w2Wjx2Z8Zh6lY5pu"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+      <div id="video-placeholder">
+        <img id="thumbnail-image" class="lazy rounded-lg max-w-full block mx-auto cursor-pointer"
+          data-src="./assets/imgs/potencial.webp" width="740" height="404"
+          alt="Imagem mostrando os especialistas e um player de vídeo onde, ao ser clicada, vai tocar o vídeo falando sobre o curso"
+          title="Clique para assistir ao vídeo">
+      </div>
     </section>
     <!-- BUTTON -->
     <section class="w-full md:px-[20%] text-center mb-4">
       <a href="https://mkt.institutoibpr.com.br/?add-to-cart=500" target="_blank"
-        class="text-white bg-verde focus:ring-4 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 inline-flex flex-col items-center me-2 justify-center h-24 w-[80%] md:w-full">
+        class="open-modal text-white bg-verde focus:ring-4 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 inline-flex flex-col items-center me-2 justify-center h-24 w-[80%] md:w-full">
 
         <p class="mb-2 inline-flex items-center justify-center text-xl">
           COMECE AGORA
@@ -217,10 +197,11 @@
     </section>
     <!-- INFO PARAGRAPHS -->
   </div>
-  <section id="introducao" class="w-full px-4 py-32 bg-[url('./assets/imgs/bg-padrao-verde.jpg')] bg-cover">
+  <section id="introducao" class="w-full px-4 py-32 bg-sobre bg-cover">
     <div class="flex gap-12 w-full sm:w-8/12 mx-auto px-4 sm:px-0">
       <div class="hidden md:block w-4/12">
-        <img class="rounded-lg w-full h-auto block" src="./assets/imgs/imagem-1.png" alt="IIBPR">
+        <img class="lazy rounded-lg w-full h-auto block" data-src="./assets/imgs/imagem-1.webp" width="419" height="920"
+          alt="Especialista fazendo exercícios com duas crianças">
       </div>
       <div class="w-full md:w-8/12">
         <div class="w-40 h-1 bg-verde inline-block"></div>
@@ -269,7 +250,7 @@
   </section>
 
   <!-- METODO -->
-  <section id="informacoes" class="py-16 bg-[url('./assets/imgs/bg-criancas.jpg')] bg-cover">
+  <section id="informacoes" class="py-16 bg-cover">
     <div class="mb-12">
       <div class="w-full px-4 md:px-0 md:w-8/12 mx-auto">
         <h2 class="text-white text-center text-2xl md:text-2xl">
@@ -328,9 +309,9 @@
         <div id="default-tab-content" class="w-full sm:w-6/12 px-4 sm:px-6 text-medium text-white rounded-lg">
           <div class="hidden sm:px-4 rounded-lg bg-transparent" id="triade" role="tabpanel"
             aria-labelledby="triade-tab">
-            <h2 class="mb-6 text-2xl font-bold leading-none tracking-tight text-white md:text-3xl lg:text-4xl">
+            <h3 class="mb-6 text-2xl font-bold leading-none tracking-tight text-white md:text-3xl lg:text-4xl">
               O Que Você Vai Aprender:
-            </h2>
+            </h3>
             <p class="font-bold mb-2">
               Fundamentos da Grafomotricidade:
             </p>
@@ -349,9 +330,9 @@
           </div>
           <div class="hidden sm:px-4 rounded-lg bg-transparent" id="essencia" role="tabpanel"
             aria-labelledby="essencia-tab">
-            <h2 class="mb-6 text-2xl font-bold leading-none tracking-tight text-white md:text-3xl lg:text-4xl">
+            <h3 class="mb-6 text-2xl font-bold leading-none tracking-tight text-white md:text-3xl lg:text-4xl">
               Benefícios do Curso:
-            </h2>
+            </h3>
             <p class="font-bold mb-2">
               Melhoria do Desempenho Acadêmico:
             </p>
@@ -370,9 +351,9 @@
           </div>
           <div class="hidden sm:px-4 rounded-lg bg-transparent" id="autolideranca" role="tabpanel"
             aria-labelledby="autolideranca-tab">
-            <h2 class="mb-6 text-2xl font-bold leading-none tracking-tight text-white md:text-3xl lg:text-4xl">
+            <h3 class="mb-6 text-2xl font-bold leading-none tracking-tight text-white md:text-3xl lg:text-4xl">
               Principais Características do Curso:
-            </h2>
+            </h3>
             <p class="font-bold mb-2">
               Instrução Especializada:
             </p>
@@ -629,7 +610,7 @@
       </div>
     </section>
   </div>
-  <section id="ciclo" class="w-full px-4 py-32 bg-[url('./assets/imgs/bg-padrao-completo.jpg')] bg-cover">
+  <section id="ciclo" class="w-full px-4 py-32 bg-completo bg-cover">
     <div
       class="flex flex-col flex-col-reverse md:flex-row gap-2 w-full sm:w-8/12 mx-auto px-4 sm:px-0 text-white mb-16">
       <div class="w-full md:w-4/12">
@@ -654,7 +635,8 @@
         </div>
       </div>
       <div class="w-full md:w-4/12 flex items-center justify-center hidden md:block">
-        <img class="w-full h-auto block mx-auto" src="./assets/imgs/mandala.png" alt="IIBPR">
+        <img class="lazy w-full h-auto block mx-auto" data-src="./assets/imgs/mandala.webp" width="423" height="397"
+          alt="Mandala com o ciclo proposto pelo curso de Grafomotricidade contendo as etapas Apoio à Comunidade, Engajamento e Confiança, Melhoria do Desempenho Acadêmico, Recursos para Toda a Vida">
       </div>
       <div class="w-full md:w-4/12">
         <div class="mb-8 sm:mb-32">
@@ -678,12 +660,13 @@
         </div>
       </div>
       <div class="w-full md:w-4/12 flex items-center justify-center block md:hidden">
-        <img class="w-full h-auto block mx-auto" src="./assets/imgs/mandala.png" alt="IIBPR">
+        <img class="lazy w-full h-auto block mx-auto" data-src="./assets/imgs/mandala.webp" width="423" height="397"
+          alt="Mandala com o ciclo proposto pelo curso de Grafomotricidade contendo as etapas Apoio à Comunidade, Engajamento e Confiança, Melhoria do Desempenho Acadêmico, Recursos para Toda a Vida">
       </div>
     </div>
     <div class="text-center w-full md:w-60 mx-auto">
       <a href="https://mkt.institutoibpr.com.br/?add-to-cart=500" target="_blank"
-        class="text-verde bg-white focus:ring-4 focus:outline-none font-medium rounded-full text-sm p-6 block mx-auto w-full">
+        class="open-modal text-verde bg-white focus:ring-4 focus:outline-none font-medium rounded-full text-sm p-6 block mx-auto w-full">
         <p class="mb-2 inline-flex items-center justify-center text-xl">
           COMECE AGORA
         </p>
@@ -716,23 +699,28 @@
               por especialistas de renome internacional.</p>
           </div>
         </div>
-        <img src="./assets/imgs/quem-somos.png" class="object-cover w-full rounded-lg h-auto md:w-4/12">
+        <img data-src="./assets/imgs/quem-somos.webp" class="lazy object-cover w-full rounded-lg h-auto md:w-4/12"
+          width="560" height="664" alt="Foto de Augusto Parras e Fabiane Crispim">
       </div>
     </div>
     <div class="w-full items-center bg-white mb-20">
       <div class="w-full flex flex-col md:flex-row gap-8">
-        <img src="./assets/imgs/quem-somos-2.png" class="object-cover w-full md:w-3/12 rounded-lg h-auto">
-        <img src="./assets/imgs/quem-somos-3.png" class="object-cover w-full md:w-6/12 h-auto rounded-lg ">
-        <img src="./assets/imgs/quem-somos-4.png" class="object-cover w-full md:w-3/12 rounded-lg h-auto">
+        <img data-src="./assets/imgs/quem-somos-2.webp" class="lazy object-cover w-full md:w-3/12 rounded-lg h-auto"
+          width="354" height="624" alt="Augusto ensinando duas meninas">
+        <img data-src="./assets/imgs/quem-somos-3.webp" class="lazy object-cover w-full md:w-6/12 h-auto rounded-lg"
+          width="520" height="624" alt="Augusto e Fabiane fazendo uma atividade lúdica com uma criança">
+        <img data-src="./assets/imgs/quem-somos-4.webp" class="lazy object-cover w-full md:w-3/12 rounded-lg h-auto"
+          width="354" height="624" alt="Augusto e Fabiane palestrando para um grupo de pessoas">
       </div>
     </div>
     <div class="w-full md:w-8/12 items-center bg-white mb-20 mx-auto">
       <div class="w-full flex flex-col md:flex-row gap-12 mb-12">
-        <img src="./assets/imgs/quem-somos-5.png" class="w-full h-auto md:w-3/12">
+        <img data-src="./assets/imgs/quem-somos-5.webp" class="lazy w-full h-auto md:w-3/12" width="310" height="310"
+          alt="Foto de Ana Rita Matias">
         <div class="flex flex-col sm:p-4 leading-normal">
-          <h2 class="my-6 text-2xl font-extrabold leading-none tracking-tight text-gray md:text-3xl lg:text-4xl">
+          <h3 class="my-6 text-2xl font-extrabold leading-none tracking-tight text-gray md:text-3xl lg:text-4xl">
             Ana Rita Matias
-          </h2>
+          </h3>
           <div class="opacity-70 text-start text-gray">
             <p class="py-3">Psicomotricista, doutorada em Motricidade Humana, professora e diretora de Reabilitação
               Psicomotora na Universidade de Évora, e pesquisadora premiada focada em grafomotricidade e terapia
@@ -742,12 +730,13 @@
         </div>
       </div>
       <div class="w-full flex flex-col md:flex-row gap-12 mb-12">
-        <img src="./assets/imgs/fabiane.png" class="w-full h-auto md:w-3/12 block sm:hidden">
+        <img data-src="./assets/imgs/fabiane.webp" class="lazy w-full h-auto md:w-3/12 block sm:hidden" width="292"
+          height="293" alt="Foto de Fabiane Crispim">
         <div class="flex flex-col sm:p-4 leading-normal">
-          <h2
+          <h3
             class="my-6 text-2xl font-extrabold leading-none tracking-tight text-gray md:text-3xl lg:text-4xl sm:text-end">
             Fabiane Crispim
-          </h2>
+          </h3>
           <div class="opacity-70 text-start text-gray">
             <p class="py-3 sm:text-end">Psicóloga, especialista em Psicomotricidade, com vasta experiência clínica e
               acadêmica, e
@@ -755,14 +744,16 @@
             </p>
           </div>
         </div>
-        <img src="./assets/imgs/fabiane.png" class="w-full h-auto md:w-3/12 hidden sm:block">
+        <img data-src="./assets/imgs/fabiane.webp" class="lazy w-full h-auto md:w-3/12 hidden sm:block" width="292"
+          height="293" alt="Foto de Fabiane Crispim">
       </div>
       <div class="w-full flex flex-col md:flex-row gap-12 mb-12">
-        <img src="./assets/imgs/augusto.png" class="w-full h-auto md:w-3/12">
+        <img data-src="./assets/imgs/augusto.webp" class="lazy w-full h-auto md:w-3/12" width="310" height="310"
+          alt="Foto de Augusto Parras">
         <div class="flex flex-col sm:p-4 leading-normal">
-          <h2 class="my-6 text-2xl font-extrabold leading-none tracking-tight text-gray md:text-3xl lg:text-4xl">
+          <h3 class="my-6 text-2xl font-extrabold leading-none tracking-tight text-gray md:text-3xl lg:text-4xl">
             Augusto Parras Albuquerque
-          </h2>
+          </h3>
           <div class="opacity-70 text-start text-gray">
             <p class="py-3">Psicólogo e educador físico, doutorando em Motricidade Humana, com uma rica trajetória em
               Psicomotricidade Relacional e Educação Física Adaptada.
@@ -774,7 +765,7 @@
   </section>
   <section id="faq" class="w-full md:w-8/12 px-4 md:px-0 mx-auto py-16">
     <div id="accordion-collapse" data-accordion="collapse" class="mb-20">
-      <h2 id="accordion-collapse-heading-1">
+      <h4 id="accordion-collapse-heading-1">
         <button type="button"
           class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200    hover:bg-gray-100  gap-3"
           data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
@@ -786,7 +777,7 @@
               d="M9 5 5 1 1 5" />
           </svg>
         </button>
-      </h2>
+      </h4>
       <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
         <div class="p-5 border border-b-0 border-gray-200 ">
           <p class="mb-2 text-gray-500 ">Este curso é ideal para educadores, psicomotricistas, terapeutas ocupacionais,
@@ -795,7 +786,7 @@
             de maneira eficaz e integrada.</p>
         </div>
       </div>
-      <h2 id="accordion-collapse-heading-2">
+      <h4 id="accordion-collapse-heading-2">
         <button type="button"
           class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200    hover:bg-gray-100  gap-3"
           data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
@@ -807,7 +798,7 @@
               d="M9 5 5 1 1 5" />
           </svg>
         </button>
-      </h2>
+      </h4>
       <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
         <div class="p-5 border border-b-0 border-gray-200 ">
           <p class="mb-2 text-gray-500 ">A Dra. Ana Rita Matias é professora e pesquisadora em Motricidade Humana em
@@ -817,7 +808,7 @@
             terapêutico.</p>
         </div>
       </div>
-      <h2 id="accordion-collapse-heading-3">
+      <h4 id="accordion-collapse-heading-3">
         <button type="button"
           class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200    hover:bg-gray-100  gap-3"
           data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
@@ -829,7 +820,7 @@
               d="M9 5 5 1 1 5" />
           </svg>
         </button>
-      </h2>
+      </h4>
       <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
         <div class="p-5 border border-t-0 border-gray-200 ">
           <p class="mb-2 text-gray-500 ">O curso tem duração de 3 horas e é totalmente online, oferecendo flexibilidade
@@ -838,7 +829,7 @@
           </p>
         </div>
       </div>
-      <h2 id="accordion-collapse-heading-4">
+      <h4 id="accordion-collapse-heading-4">
         <button type="button"
           class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200    hover:bg-gray-100  gap-3"
           data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
@@ -850,7 +841,7 @@
               d="M9 5 5 1 1 5" />
           </svg>
         </button>
-      </h2>
+      </h4>
       <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
         <div class="p-5 border border-t-0 border-gray-200 ">
           <p class="mb-2 text-gray-500 ">Sim, todos os participantes que completarem o curso receberão um certificado
@@ -862,7 +853,7 @@
     </div>
     <div class="text-center w-full md:w-60 mx-auto">
       <a href="https://mkt.institutoibpr.com.br/?add-to-cart=500" target="_blank"
-        class="text-white bg-verde focus:ring-4 focus:outline-none font-medium rounded-full text-sm p-6 block mx-auto w-full">
+        class="open-modal text-white bg-verde focus:ring-4 focus:outline-none font-medium rounded-full text-sm p-6 block mx-auto w-full">
         <p class="mb-2 inline-flex items-center justify-center text-xl">
           COMECE AGORA
         </p>
@@ -878,9 +869,211 @@
       alunos. Nosso curso é projetado para educadores, pedagogos e especialistas em desenvolvimento infantil que
       desejam ampliar suas habilidades e enriquecer a experiência de aprendizagem das crianças.
     </p>
-    <img class="w-full h-auto my-12 rounded-lg" src="./assets/imgs/final.jpg" alt="">
+    <div class="md:px-[20%] mx-auto">
+      <img class="lazy w-full h-auto my-12 rounded-lg" data-src="./assets/imgs/final.webp" width="700" height="700"
+        alt="Montagem com fotos de pessoas especialistas e Grafomotricidade">
+    </div>
   </section>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span> <!-- Botão para fechar o modal -->
+      <div class="iframe-container">
+        <form id="form-lead" method="post" action="">
+          <div class="block text-musgo-escuro">
+            <div class="mb-2">
+              <p>Preencha antes de prosseguir.</p>
+            </div>
+            <div class="mb-2">
+              <input placeholder="Nome" class="w-full p-1 border border-musgo rounded text-musgo-escuro" type="text"
+                name="nome" required>
+            </div>
+            <div class="mb-2">
+              <input placeholder="E-mail" class="w-full p-1 border border-musgo rounded text-musgo-escuro" type="email"
+                name="email" required>
+            </div>
+            <div class="mb-2">
+              <input placeholder="Whatsapp" class="w-full p-1 border border-musgo rounded text-musgo-escuro" type="tel"
+                name="whatsapp" required>
+            </div>
+            <div>
+              <input class="p-2 w-full rounded bg-verde text-white font-bold text-center" type="submit" name="submit"
+                value="Avançar">
+            </div>
+          </div>
+        </form>
+        <div id="loadingIndicator" class="inline-flex justify-center items-center" style="display: none;">
+          <img class="lazy max-w-full" data-src="./assets/imgs/load.gif" width="300" height="215" alt="Carregando">
+          <p class="text-center">
+            Carregando...
+          </p>
+        </div>
+
+      </div>
+    </div>
   </div>
+  <script type="text/javascript" defer>
+    document.addEventListener("DOMContentLoaded", function () {
+      var script = document.createElement('script');
+      script.src = './assets/js/flowbite.min.js';
+      script.defer = true;
+      document.body.appendChild(script);
+    });
+
+    window.addEventListener('load', function () {
+      var lazyloadImages = document.querySelectorAll("img.lazy");
+      var lazyloadThrottleTimeout;
+      lazyloadImages.forEach(function (img) {
+        img.src = img.dataset.src;
+        img.classList.remove('lazy');
+      });
+
+      // Google Analytics (gtag.js)
+      var scriptGtag = document.createElement('script');
+      scriptGtag.src = 'https://www.googletagmanager.com/gtag/js?id=G-JKV0HNPENN';
+      scriptGtag.async = true;
+      document.head.appendChild(scriptGtag);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-JKV0HNPENN');
+
+      // Google Tag Manager
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-N8FC4MHX');
+
+      var divInfo = document.getElementById('informacoes');
+      divInfo.classList.add('bg-criancas');
+      var divCiclo = document.getElementById('ciclo');
+      divCiclo.classList.add('bg-completo');
+      var divIntro = document.getElementById('introducao');
+      divIntro.classList.add('bg-sobre');
+
+    });
+
+    document.getElementById('video-placeholder').addEventListener('click', function () {
+      var iframe = document.createElement('iframe');
+      iframe.setAttribute('src', 'https://www.youtube.com/embed/RnmL9y4kXeQ?autoplay=1');
+      iframe.setAttribute('class', 'object-cover w-full rounded-lg');
+      iframe.setAttribute('width', '100%');
+      iframe.setAttribute('height', '390');
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('title', 'YouTube video player');
+
+      // Limpa o conteúdo dentro do div e adiciona o iframe
+      var videoPlaceholder = document.getElementById('video-placeholder');
+      videoPlaceholder.innerHTML = ''; // Remove a imagem
+      videoPlaceholder.appendChild(iframe); // Adiciona o iframe
+    });
+
+    // Função para abrir o modal ao clicar em links com a classe "open-modal"
+    const openModalLinks = document.querySelectorAll(".open-modal");
+    const modal = document.getElementById("myModal");
+
+    openModalLinks.forEach(link => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        modal.style.display = "flex"; /* Alterado para flex */
+      });
+    });
+
+    // Função para fechar o modal
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    // Função para fechar o modal quando o usuário clicar fora do modal
+    window.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+
+    const form = document.getElementById("form-lead");
+    const loadingIndicator = document.getElementById("loadingIndicator");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      form.style.display = "none";
+      loadingIndicator.style.display = "block";
+
+      const data = new FormData(event.target);
+      const submissionData = {
+        nome: data.get("nome"),
+        email: data.get("email"),
+        whatsapp: data.get("whatsapp")
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycbw9klt3LMzxjNbyGdKheoL_gWpul0UsAevgUAsdQOSyQBWJeQ9iTkUKpdj7K9x2h6zk/exec", {
+        method: 'POST',
+        mode: 'no-cors', // Modo no-cors adicionado aqui
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: submissionData.nome,
+          email: submissionData.email,
+          whatsapp: submissionData.whatsapp
+        }),
+      })
+        .then(() => {
+          // Como a resposta é opaca, não podemos verificar se foi bem-sucedida através do status da resposta.
+          console.log('Formulário enviado.');
+          window.location.href = 'https://mkt.institutoibpr.com.br/?add-to-cart=500';
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          form.style.display = "block";
+          loadingIndicator.style.display = "none";
+        });
+    });
+
+  </script>
+  <style>
+    /* Estilos para o modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Estilos para o botão de fechar */
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
 </body>
 
 </html>

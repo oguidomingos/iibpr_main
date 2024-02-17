@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.17",
+    "build": "^0.1.4",
+    "cssnano": "^6.0.3",
+    "flowbite": "^2.3.0",
+    "postcss": "^8.4.35"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "build": "postcss ./assets/css/output.css -o ./assets/css/dist.css",
+    "prod": "cross-env NODE_ENV=production postcss ./assets/css/dist.css -o ./assets/css/mini.css"
+  }
+}
