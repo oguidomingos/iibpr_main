@@ -31,7 +31,49 @@
     <link rel="icon" href="images/favicon.ico" sizes="43x43" />
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/odometer-theme-default.css" />
-    
+
+    <!-- Ajustes de UI/UX do hero (legibilidade dos textos sobre as artes) - 2026-06 -->
+    <style>
+        /* Desktop: textos do hero maiores e legiveis sobre a imagem */
+        #carouselExampleCaptions .carousel-caption { max-width: 900px; }
+        #carouselExampleCaptions .carousel-caption h1 {
+            font-size: 64px; line-height: 1.1; text-shadow: 0 2px 14px rgba(0,0,0,.6);
+        }
+        #carouselExampleCaptions .carousel-caption h1 small {
+            font-size: 28px; letter-spacing: 1px; padding-top: 14px; padding-bottom: 22px;
+            text-shadow: 0 2px 10px rgba(0,0,0,.55);
+        }
+        #carouselExampleCaptions .carousel-caption p,
+        #carouselExampleCaptions .carousel-caption .font-18 {
+            font-size: 22px !important; line-height: 1.55; margin-bottom: 10px;
+            text-shadow: 0 1px 10px rgba(0,0,0,.6);
+        }
+        #carouselExampleCaptions .home6-btn1 {
+            font-size: 16px; max-width: 300px; padding-top: 16px; padding-bottom: 16px; margin-top: 8px;
+        }
+
+        /* Tablet */
+        @media (max-width: 991px) {
+            #carouselExampleCaptions .carousel-caption h1 { font-size: 42px; }
+            #carouselExampleCaptions .carousel-caption h1 small { font-size: 22px; }
+            #carouselExampleCaptions .carousel-caption p,
+            #carouselExampleCaptions .carousel-caption .font-18 { font-size: 19px !important; }
+        }
+
+        /* Mobile: arruma altura/enquadramento e mantem texto legivel */
+        @media (max-width: 767px) {
+            #carouselExampleCaptions .carousel-inner,
+            #carouselExampleCaptions .carousel-inner .carousel-item { height: auto; }
+            #carouselExampleCaptions .home6sliderImage { min-height: 560px; height: 100%; object-fit: cover; object-position: center; }
+            #carouselExampleCaptions .carousel-caption { right: 20px; left: 20px; padding: 24px 6px; }
+            #carouselExampleCaptions .carousel-caption h1 { font-size: 30px; padding-bottom: 14px; }
+            #carouselExampleCaptions .carousel-caption h1 small { font-size: 18px; padding-bottom: 14px; }
+            #carouselExampleCaptions .carousel-caption p,
+            #carouselExampleCaptions .carousel-caption .font-18 { font-size: 17px !important; line-height: 1.5; }
+            #carouselExampleCaptions .home6-btn1 { font-size: 15px; max-width: 100%; }
+        }
+    </style>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKV0HNPENN"></script>
 <script>
